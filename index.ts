@@ -3,8 +3,17 @@
 // CLI entrypoint — no features yet
 const args = Bun.argv.slice(2);
 
+const vibes = [
+  "ship it",
+  "one more refactor",
+  "tests later",
+  "works on my machine",
+  "bun speedrun",
+];
+
 if (args.length === 0) {
-  console.log("newrepo");
+  const vibe = vibes[Math.floor(Math.random() * vibes.length)];
+  console.log(`newrepo — ${vibe}`);
   process.exit(0);
 }
 
