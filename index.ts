@@ -4,7 +4,7 @@
 const args = Bun.argv.slice(2);
 
 if (args.length === 0) {
-  console.log("newrepo");
+  console.log("Weeeee");
   process.exit(0);
 }
 
